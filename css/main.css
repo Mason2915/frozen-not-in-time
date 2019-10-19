@@ -1,0 +1,186 @@
+.background-image {
+  background-image: repeating-linear-gradient(-33deg, #b3fbff, #c9fcff 20px, #d4fdff 20px);
+}
+
+.banner {
+  font-family: "Fredoka One", sans-serif;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.title {
+  left: -.15em;
+  position: relative;
+  color: #990073;
+
+  animation: title-in 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  filter: blur(12px);
+  transform: rotate(-11deg);
+  transform-origin: left center;
+}
+
+.intro {
+  max-width: 19em;
+  color: #c09;
+
+  animation: intro-in 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  filter: blur(12px);
+  transform: rotate(-7deg);
+  transform-origin: left center;
+}
+
+.btn-ghost {
+  animation: btn-in 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  filter: blur(12px);
+  color: #c09;
+  border-color: #990073;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(255, 0, 153, .1);
+  border-color: #990073;
+  color: #c09;
+}
+
+.ice-cream-section {
+  min-height: 480px;
+}
+
+@keyframes title-in {
+
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    transform: rotate(-11deg);
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    transform: rotate(-9deg);
+  }
+
+}
+
+@keyframes intro-in {
+
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+
+}
+
+@keyframes btn-in {
+
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+
+}
+
+.ice-cream {
+  bottom: 100%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+
+  transform: translateX(-50%);
+}
+
+.ice-cream-cone {
+  animation: cone-drop 300ms ease-in forwards;
+}
+
+@keyframes cone-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+
+}
+
+.ice-cream-mint {
+  animation: mint-drop 300ms 300ms ease-in forwards;
+}
+
+@keyframes mint-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 104px;
+  }
+
+}
+
+.ice-cream-chocolate {
+  left: 53%;
+  animation: chocolate-drop 300ms 600ms ease-in forwards;
+}
+
+@keyframes chocolate-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 190px;
+  }
+
+}
+
+.ice-cream-vanilla {
+  left: 48%;
+  animation: vanilla-drop 200ms 900ms ease-in forwards;
+}
+
+@keyframes vanilla-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 263px;
+  }
+
+}
+
+.ice-cream-cherry {
+  animation: cherry-drop 150ms 1500ms ease-in forwards;
+}
+
+@keyframes cherry-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 342px;
+  }
+
+}
